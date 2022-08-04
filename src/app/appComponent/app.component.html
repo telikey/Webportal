@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<layout [viewContext]="layoutViewContext">
+  <ng-template let-topViewContext #left>
+    <div class="app-layout-left">test</div>
+  </ng-template>
+  <ng-template let-topViewContext #top>
+    <div class="app-layout-top">test</div>
+  </ng-template>
+  <ng-template let-bottomViewContext #right>
+    <div class="app-layout-right">test</div>
+  </ng-template>
+  <ng-template let-bottomViewContext #bottom>
+    <div class="app-layout-bottom">test</div>
+  </ng-template>
+</layout>
