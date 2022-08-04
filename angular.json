@@ -107,5 +107,19 @@
       }
     }
   },
-  "defaultProject": "Webportal"
+  "defaultProject": "Webportal",
+  "schematics": {
+    "@schematics/angular:component": {
+        "style": "scss",
+        "skipTests": true,
+        "changeDetection": "OnPush",
+        "flat": true
+    },
+    "@schematics/angular:service": {
+        "skipTests": true
+    },
+    "@schematics/angular:directive": {
+        "prefix": ""
+    }
+}
 }
