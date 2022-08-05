@@ -1,11 +1,11 @@
-<layout [viewContext]="layoutViewContext">
-  <ng-template let-topViewContext #left>
+<layout class="app-layout" [viewContext]="layoutViewContext">
+  <ng-template let-leftViewContext #left>
     <div class="app-layout-left">test</div>
   </ng-template>
   <ng-template let-topViewContext #top>
     <div class="app-layout-top">test</div>
   </ng-template>
-  <ng-template let-bottomViewContext #right>
+  <ng-template let-rightViewContext #right>
     <div class="app-layout-right">test</div>
   </ng-template>
   <ng-template let-bottomViewContext #bottom>

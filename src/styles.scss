@@ -1,7 +1,17 @@
 :root {
   --main-background-color: black;
-  --main-button-font-color: white;
+  --main-text-font-color: white;
 }
 html {
   background-color: var(--main-background-color);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+p {
+  margin: 0 0 1em;
 }
