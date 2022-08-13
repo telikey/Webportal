@@ -107,7 +107,6 @@
       }
     }
   },
-  "defaultProject": "Webportal",
   "schematics": {
     "@schematics/angular:component": {
         "style": "scss",
@@ -121,5 +120,8 @@
     "@schematics/angular:directive": {
         "prefix": ""
     }
+},
+"cli": {
+  "analytics": false
 }
 }

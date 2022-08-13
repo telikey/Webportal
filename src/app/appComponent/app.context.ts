@@ -16,11 +16,7 @@ export class AppViewContext implements IAppViewContext {
   layoutViewContext(): ILayoutViewContext {
     const result = new LayoutViewContext(
       this.mainCover,
-      (mainCover) => {
-        return new LayoutChildViewContext(mainCover, (mainCover) => {
-          return 2;
-        });
-      },
+      undefined,
       (mainCover) => {
         return new LayoutChildViewContext(mainCover, (mainCover) => {
           return 2;
